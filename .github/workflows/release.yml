@@ -274,7 +274,7 @@ jobs:
 
   sync-version-file:
     needs: [release]
-    if: ${{ needs.release.result == 'success' }}
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout default branch
